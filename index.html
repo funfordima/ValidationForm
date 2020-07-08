@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <form action="#0">
+        <div>
+            <input required type="text" id="first_name" name="first_name" placeholder=" ">
+            <label for="first_name">First name</label>
+        </div>
+        <div>
+            <input required type="text" id="last_name" name="last_name" placeholder=" ">
+            <label for="last_name">Last name</label>
+        </div>
+        <div>
+            <input required type="email" id="email" name="email" placeholder=" ">
+            <label for="email">Email address</label>
+            <div class="requirements">
+                Must be a valid email address.
+            </div>
+        </div>
+        <div>
+            <input required type="password" id="password" name="password" placeholder=" "
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}">
+            <label for="password">Password</label>
+            <div class="requirements">
+                Must be a 6 symbols.
+            </div>
+        </div>
+        <input type="submit" value="Sign up">
+
+
+    </form>
+
+
+</body>
+
+</html>
